@@ -5,13 +5,39 @@
   <title>Hunter Quintal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    header {
+      position: relative;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header img {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    header h1 {
+      display: inline-block;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.2rem;
+      margin: 0;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0066cc;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <img src="assets/images/headshot.png" alt="Hunter Quintal Headshot">
     <h1>Hunter Quintal</h1>
-    <p>Hydrologist · Climatologist · Data Scientist</p>
-<img src="assets/images/headshot.png" alt="Hunter Quintal Headshot"
-     style="max-width: 150px; border-radius: 50%; margin: 1rem auto; display: block;">
     <nav>
       <a href="index.html">Home</a>
       <a href="cv.html">CV</a>
@@ -22,7 +48,7 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I’m building tools to understand trends in extreme weather events using high-resolution climate data, 
+      I’m building tools to understand trends in extreme weather events using high-resolution climate data,
       geospatial analysis, and spatiotemporal clustering techniques.
     </p>
   </section>
@@ -30,7 +56,8 @@
   <section>
     <h2>Projects</h2>
     <ul>
-      <li><strong>Severe Storm Database:</strong> CONUS-wide archive of extreme storm events (2002–2025) based on AORC and Atlas 14 data.</li>
+      <li><strong>Severe Storm Database:</strong> CONUS-wide archive of clustered extreme precipitation events (2002–2025).</li>
+      <li><strong>Covariance-Informed Spatiotemporal Clustering:</strong> Method to quantify the resolution required for unbiased spatiotemporal clustering of any variable.</li>
     </ul>
   </section>
 
@@ -45,3 +72,4 @@
   </footer>
 </body>
 </html>
+                                

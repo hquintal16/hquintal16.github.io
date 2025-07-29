@@ -17,7 +17,7 @@
     }
     nav {
       text-align: center;
-      margin-bottom: 2rem;
+      margin: 1rem 0 2rem;
     }
     nav a {
       margin: 0 15px;
@@ -48,57 +48,72 @@
     ul {
       padding-left: 1.2rem;
     }
+    img.headshot {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      height: auto;
+      border-radius: 50%;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Navigation Links -->
+  <!-- Headshot -->
+  <img src="assets/images/headshot.png" alt="Hunter Quintal Headshot" class="headshot" />
+
+  <!-- Name -->
+  <h1>Hunter Quintal</h1>
+
+  <!-- Hyperlinks -->
   <nav>
-    <a href="assets/Hunter_Quintal_CV.pdf" target="_blank">CV</a>
+    <a href="mailto:hunter.quintal@gmail.com">Email</a>
+    <a href="assets/HunterQuintal_CV.pdf" target="_blank">CV</a>
     <a href="https://scholar.google.com/citations?user=ihFgz2EAAAAJ&hl=en" target="_blank">Google Scholar</a>
     <a href="https://www.linkedin.com/in/hunter-quintal-14a722104/" target="_blank">LinkedIn</a>
-    <a href="#media">Media</a>
   </nav>
 
-  <!-- About Section -->
-  <h1>Hunter Quintal</h1>
-  <p style="text-align: center;">
-    I’m a PhD candidate in the Department of Earth, Marine, and Environmental Sciences at the University of North Carolina at Chapel Hill. My research uncovers trends in extreme weather events using high-resolution meteorological data, extreme value analysis, temporal geostatistics, and (un)supervised machine learning methods.
-  </p>
-
-<p style="text-align: center;">
-  <a href="mailto:hunter.quintal@gmail.com">hunter.quintal@gmail.com</a>
-</p>
-
-
-  <!-- Project 1 -->
-  <section>
-    <h2>Severe Storm Database</h2>
-    <figure>
-      <img src="assets/images/severe_storm_database.png" alt="Severe Storm Database Visualization" style="max-width: 90%; height: auto;" />
-      <figcaption>Hurricane Helene (September 2024) illustrated by maximum exceeded return period.</figcaption>
-    </figure>
-    <p class="project-summary">
-      A CONUS-wide archive of severe convective storms based on NOAA AORC precipitation accumulated over 1, 3, 6, and 12 hr windows. Extreme precipitation is identified with NOAA Atlas 14 before being clustered into discrete space time footprints representing distinct storms using the clustering algorithm DBSCAN. This provides a novel database for evaluation of intensity, duration, and frequency trends and flood hazard modeling.
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align: center;">
+      I’m a PhD candidate in the Department of Earth, Marine, and Environmental Sciences at the University of North Carolina at Chapel Hill. My research uncovers trends in extreme weather events using high-resolution meteorological data, extreme value analysis, temporal geostatistics, and (un)supervised machine learning methods.
     </p>
   </section>
 
-  <!-- Project 2 -->
-  <section>
-    <h2>Covariance-Informed Spatiotemporal Clustering</h2>
-    <figure>
-      <img src="assets/images/covariance_clustering.png" alt="Covariance-Informed Clustering Diagram" style="max-width: 90%; height: auto;" />
-      <figcaption>Daily, county-scale performance (recall; sensitivity) of covariance-informed spatiotemporal clustering model for heat wave detection reported in NCEI Storm Events Database (2019–2023). A recall of 1.0 represents perfect model performance.</figcaption>
-    </figure>
-    <p class="project-summary">
-      A novel clustering framework that incorporates space time separable covariance modeling to improve detection of hazardous weather events in meteorological datasets. Covariance decay is modeled empirically and used to parameterize the space time resolution appropriate for unbiased three-dimensional clustering. Applicable to any geophysical dataset. 
-      <br />
-      <a href="https://egusphere.copernicus.org/preprints/2025/egusphere-2025-2870/" target="_blank">EGUsphere Preprint</a>
-    </p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <section>
+      <h3 style="text-align: center;">Severe Storm Database</h3>
+      <figure>
+        <img src="assets/images/severe_storm_database.png" alt="Severe Storm Database Visualization" style="max-width: 90%; height: auto;" />
+        <figcaption>Hurricane Helene (September 2024) illustrated by maximum exceeded return period.</figcaption>
+      </figure>
+      <p class="project-summary">
+        A CONUS-wide archive of severe convective storms based on NOAA AORC precipitation accumulated over 1, 3, 6, and 12 hr windows. Extreme precipitation is identified with NOAA Atlas 14 before being clustered into discrete space time footprints representing distinct storms using the clustering algorithm DBSCAN. This provides a novel database for evaluation of intensity, duration, and frequency trends and flood hazard modeling.
+      </p>
+    </section>
+
+    <!-- Project 2 -->
+    <section>
+      <h3 style="text-align: center;">Covariance-Informed Spatiotemporal Clustering</h3>
+      <figure>
+        <img src="assets/images/covariance_clustering.png" alt="Covariance-Informed Clustering Diagram" style="max-width: 90%; height: auto;" />
+        <figcaption>Daily, county-scale performance (recall; sensitivity) of covariance-informed spatiotemporal clustering model for heat wave detection reported in NCEI Storm Events Database (2019–2023). A recall of 1.0 represents perfect model performance.</figcaption>
+      </figure>
+      <p class="project-summary">
+        A novel clustering framework that incorporates space time separable covariance modeling to improve detection of hazardous weather events in meteorological datasets. Covariance decay is modeled empirically and used to parameterize the space time resolution appropriate for unbiased three-dimensional clustering. Applicable to any geophysical dataset.
+        <br />
+        <a href="https://egusphere.copernicus.org/preprints/2025/egusphere-2025-2870/" target="_blank">EGUsphere Preprint</a>
+      </p>
+    </section>
   </section>
 
-  <!-- Media Section -->
+  <!-- Media Coverage Section -->
   <section id="media">
     <h2>Media Coverage</h2>
     <ul>
